@@ -2,8 +2,10 @@
 const Input = require('./lib/input.js');
 const Note= require('./lib/notes.js');
 
+
 const input = new Input();
 const notes = new Note(input);
+
 
 // If valid input, addnote, otherwise send help message
 // if (input.valid()) {
