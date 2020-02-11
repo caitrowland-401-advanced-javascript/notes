@@ -1,0 +1,32 @@
+{
+  "name": "add-note",
+  "version": "1.0.0",
+  "description": "### Links and Resources",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "is-url": "^1.2.4",
+    "minimist": "^1.2.0",
+    "superagent": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitrowland-401-advanced-javascript/notes.git"
+  },
+  "author": "Cait Rowland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caitrowland-401-advanced-javascript/notes/issues"
+  },
+  "homepage": "https://github.com/caitrowland-401-advanced-javascript/notes#readme"
+}
