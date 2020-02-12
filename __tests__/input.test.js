@@ -17,5 +17,4 @@ describe ('Input module', () => {
         expect(command.action).toBeDefined();
         expect(command.payload).toBeDefined();
     });
-
 })
