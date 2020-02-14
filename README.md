@@ -4,9 +4,11 @@
 
 ### Links and Resources 
 
-Pull Request: https://github.com/caitrowland-401-advanced-javascript/notes/pull/1 
-Pull Request:
-Pull Request: (2/12/20): https://github.com/caitrowland-401-advanced-javascript/notes/pull/3 
+Lab1: https://github.com/caitrowland-401-advanced-javascript/notes/pull/1 
+Lab2: https://github.com/caitrowland-401-advanced-javascript/notes/pull/2
+Lab3: https://github.com/caitrowland-401-advanced-javascript/notes/pull/3 
+Lab4: https://github.com/caitrowland-401-advanced-javascript/notes/pull/5
+
 
 
 ### Setup
