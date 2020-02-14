@@ -22,7 +22,7 @@ class Notes {
     }
 
     delete(_id) {
-        return schema.findByIdAndDelete(_id)
+        return schema.findByIdAndDelete(_id);
     }
 }
 
