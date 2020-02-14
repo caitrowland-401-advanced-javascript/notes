@@ -1,24 +1,33 @@
 const Note = require('../lib/notes.js');
+const notes = new notes();
 
-jest.spyOn(global.console, 'log');
+jest.spyOn(notes, 'add');
 
 // test for execute ()
 describe ('Notes module', () => {
     it('execute() does nothing when the options are invalid', () => {
-        const commandWillFail = {command: {'x' : 'coconut'}};
-        const notes = new Note(commandWillFail);
-        notes.execute();
-        expect(console.log).not.toHaveBeenCalled;
+        notes.execute({})
+        .then(() => {
+            expect(notes.add).not.toHaveBeenCalled
+        })
+        // const commandWillFail = {command: {}};
+        // const notes = new Note(commandWillFail);
+        // notes.execute();
+        // expect(console.log).not.toHaveBeenCalled;
     })
     
 //test for add ()
     it('Note.prototype.add() can add a note', () => {
     
-        const action = 'add';
-        const payload = ' this will succeed'
-        const notes = new Note({command: {action, payload}})
-        notes.execute();
-        expect(console.log).toHaveBeenCalledWith(`adding note: ${payload}`);
+        // const action = 'add';
+        // const payload = ' this will succeed'
+        notes.execute({ action: 'add' , payload: 'payload'})
+        .then( () => {
+            expect(notes.add).toHaveBeenCalled
+        })
+        // const notes = new Note({command: {action, payload}})
+        // notes.execute();
+        // expect(console.log).toHaveBeenCalledWith(`adding note: ${payload}`);
     })
 })
 
