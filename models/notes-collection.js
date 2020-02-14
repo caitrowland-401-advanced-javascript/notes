@@ -4,12 +4,9 @@ class Notes {
     constructor() {
     }
 
-    get(_id) {
-        if (_id) {
-            return schema.findOne({_id})
-        } else {
-            return schema.find({})
-        }
+    get(_category) {
+
+        return _category ? schema.find(_category) : schema.find({});
     }
 
     create(record) {
